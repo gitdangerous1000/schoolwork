@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Trabalho de Matemática - ISRO</title>
+</head>
+<body>
+     <!--==================== HEADER ====================-->
+     <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+                ISRO
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-line"></i>
+                            <span>Capa</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-price-tag-3-line"></i>
+                            <span>Descobrimentos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#collection" class="nav__link">
+                            <i class="ri-compass-line"></i>
+                            <span>Equipamentos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">
+                            <i class="ri-t-shirt-line"></i>
+                            <span>Planetas</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme change button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+         </nav>  
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Organização de <br>
+                        Pesquisa
+                    </h1>
+
+                    <p class="home__description">
+                        Nossa visão é "aproveitar a tecnologia <br>
+                         espacial para o desenvolvimento nacional"
+                    </p>
+
+                    <a href="planetas.html" class="button__nav">
+                        Explore <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="home__images">
+                    <img src="imagens/planeta_plastico.png" alt="planeta">
+                    <img src="imagens/planeta_fogo.png" alt="planeta">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== DESCOBRIMENTOS ====================-->
+        <section class="new section" id="new">
+            <h2 class="section__title">
+                Descobrimentos Recentes
+            </h2>
+            
+            <div class="new__container container grid">
+                <article class="new__card">
+                    <img src="imagens/planeta_agua.png" alt="planeta" class="new__img">
+
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Planeta Fervente
+                            </h2>
+                            <span class="new__subtitle">
+                                Descobrimento: 16 de dezembro de 2009 <br>
+                                Distância da Terra: 40 anos-luz <br>
+                                Local de descobrimento: Fred Lawrence Whipple Observatory
+                            </span>
+                        </div>
+
+                        <!-- <i class="ri-arrow-right-line"></i> -->
+                    </a>
+                </article>
+                
+                <article class="new__card">
+                    <img src="imagens/planeta.png" alt="planeta" class="new__img">
+
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Terra Clone
+                            </h2>
+                            <span class="new__subtitle">
+                                Descobrimento: 17 de abril de 2014 <br>
+                                Distância da Terra: 500 anos-luz <br>
+                                Local de descobrimento: Telescópio Espacial Kepler
+                            </span>
+                        </div>
+
+                        <!-- <i class="ri-arrow-right-line"></i> -->
+                    </a>
+                </article>
+
+                <article class="new__card">
+                    <img src="imagens/rocha.png" alt="planeta" class="new__img">
+
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Lua Solar 
+                            </h2>
+                            <span class="new__subtitle">
+                                Descobrimento: 26 de junho de 2014 <br>
+                                Período orbital: 297 anos <br>
+                                Local de descobrimento: Telescópio espacial Hubble
+                            </span>
+                        </div>
+
+                        <!-- <i class="ri-arrow-right-line"></i> -->
+                    </a>
+                </article>
+            </div>
+            
+            
+        </section>
+
+        <!--==================== NAVE ESPACIAL ====================-->
+        <section class="collection section" id="collection">
+            <div class="collection__container container">
+                <div class="collection__explore">
+                    <div class="collection__data-men">
+                        <h2 class="collection__title">
+                            NAVE <br>
+                             ESPACIAL 
+                        </h2>
+                        <a href="chandrayaan2.html" class="button__link">
+                            Explorar <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <img src="imagens/GSLV_MkIII.png" class="gslv__image" alt="collection">
+                </div>
+
+                <div class="collection__explore">
+                    <img src="imagens/telescopio.png" alt="collection">
+
+                    <div class="collection__data-women">
+                        <h2 class="collection__title">
+                            Satélites da <br>
+                             Universidade
+                        </h2>
+                        <a href="satelites_universidade.html" class="button__link">
+                            <i class="ri-arrow-left-line"></i> Explorar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PLANETAS DESCOBERTOS ====================-->
+        <section class="products section" id="products">
+            <h2 class="section__title">
+                Planetas Descobertos
+            </h2>
+
+            <div class="products__container container swiper">
+                <div class="swiper-wrapper">
+                    <article class="products__card swiper-slide">
+                        <img src="imagens/planeta_Kepler-1649c.png" alt="planeta" class="products__img">
+
+                        <h2 class="products__title">
+                            Terra 2.0
+                        </h2>
+                        <span class="products__price">
+                            Distância da Terra: 300 anos-luz <br>
+                            Descobrimento: 15/04/2020
+                        </span>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="imagens/planeta_azul.png" alt="products" class="products__img">
+
+                        <h2 class="products__title">
+                            Planeta Vidro
+                        </h2>
+                        <span class="products__price">
+                            Distância da Terra: 63 anos-luz
+                            Descobrimento: 5/10/2005 <br>
+                        </span>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="imagens/exoplaneta.png" alt="products" class="products__img">
+
+                        <h2 class="products__title">
+                            Super-Saturno
+                        </h2>
+                        <span class="products__price">
+                            Distância da Terra: 434 anos-luz
+                            Descobrimento: 18/06/2012 <br>
+                        </span>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="imagens/planeta_klebe.png" alt="products" class="products__img">
+                        
+                        <h2 class="products__title">
+                            Planeta Sol
+                        </h2>
+                        <span class="products__price">
+                            Distância da Terra: 587 anos-luz
+                            Descobrimento: 20/12/2011 <br>
+                        </span>
+                    </article>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-line"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-line"></i>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PATROCINADORES ====================-->
+        <section class="brand section">
+            <h2 class="section__title">
+                Patrocinadores
+            </h2>
+
+            <div class="brand__container container grid">
+                <img src="imagens/spacex-256.png" alt="logo" class="brand__img">
+                <img src="imagens/logo-nasa-256.png" alt="logo" class="brand__img">
+                <img src="imagens/bacen.png" alt="logo" class="brand__img">
+                <img src="imagens/national.png" alt="logo" class="brand__img">
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    ISRO
+                </a>
+
+                <p class="footer__description">
+                    A prontidão futura é a chave para manter <br>
+                    uma vantagem em tecnologia e a ISRO se <br>
+                    esforça para otimizar e aprimorar suas <br>
+                    tecnologias à medida que as necessidades <br>
+                    e ambições do país evoluem.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        Plano de Negócios
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="capital_inicial.html" class="footer__link">Capital Inicial</a>
+                        </li>
+
+                        <li>
+                            <a href="capital_giro.html" class="footer__link">Capital de Giro</a>
+                        </li>
+
+                        <li>
+                            <a href="cargos.html" class="footer__link">Cargos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Blogue
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="historia.html" class="footer__link">Historia da Empresa</a>
+                        </li>
+                        
+                        <li>
+                            <a href="planos.html" class="footer__link">Planos de ação</a>
+                        </li>
+
+                        <li>
+                            <a href="noticias.html" class="footer__link">Notícias recentes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__office">
+                        Escritório
+                    </h3>
+
+                    <p class="footer__cla">
+                        Centro de lançamento - CLA,
+                        Brasília <br>
+                        8:00 até as 20:00 
+                    </p>
+                </div>
+
+                <!-- <div>
+                    <h3 class="footer__title">
+                        Contate-nos
+                    </h3>
+
+                    <ul class="footer__social">
+
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+
+                        <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="footer__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="footer__info container">
+            <span class="footer__copy">
+                &#169; ISRO. Todos os direitos reservados
+            </span>
+
+            <a href="#" class="footer__privacy">
+                Termos e Condições
+            </a>
+        </div>
+    </footer>
+
+    <!--==================== MENU JQUERY ====================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $('.barra').mousemove(function() {
+            var val = $(this).data('val');
+            $('.tooltip').html(val)
+            $('.tooltip').show();
+        }).mouseleave(function(){
+            $('.tooltip').hide();
+        })
+    </script>
+        
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+    
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+
+</body>
+</html>

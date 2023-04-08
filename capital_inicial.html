@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Capital incial - ISRO</title>
+</head>
+<body>
+     <!--==================== HEADER ====================-->
+     <!-- <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+                ISRO
+            </a>
+
+            
+                <a href="home.html" class="story__button">
+                    <i class="ri-arrow-left-line"></i> Voltar 
+                </a>
+
+            
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+         </nav>  
+    </header> -->
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <div class="grafico_barras">
+            <div class="colunas">
+                <div class="escala_y">
+                    <div class="divisao">6M</div>
+                    <div class="divisao">5M</div>
+                    <div class="divisao">4M</div>
+                    <div class="divisao">3M</div>
+                    <div class="divisao">2.2M</div>
+                    <div class="divisao">1M</div>
+                    <div class="divisao">0</div>
+                </div>
+                <div class="area_grafico">
+                    <div class="area_barras">
+                        <div class="tooltip">
+                            Teste
+                        </div>
+                        <div class="divisao">
+                            <div class="barra verde" style="height: 16%" data-val="Lucro Inicial: 1.000.000"></div>
+                            <div class="barra azul" style="height: 16%" data-val="Total: 1.000.000"></div>
+                            <div class="barra vermelho" style="height: 1%" data-val="Perda: 0"></div>
+                        </div>
+                        <div class="divisao">
+                            <div class="barra verde" style="height: 31%" data-val="Lucro Inicial: 2.200.000"></div>
+                            <div class="barra azul" style="height: 28%" data-val="Total: 2.110.000"></div>
+                            <div class="barra vermelho" style="height: 25%" data-val="Perda: -US$17.200 ou -R$91.800"></div>
+                        </div>
+                        <div class="divisao">
+                            <div class="barra verde" style="height: 61.8%" data-val="Lucro Inicial: 4.000.000 ao Mes"></div>
+                            <div class="barra azul" style="height: 99%" data-val="Total: 4.000.000+"></div>
+                            <div class="barra vermelho" style="height: 1%" data-val="Perda: 0"></div>
+                        </div>
+                        <div class="divisao">
+                            <div class="barra verde" style="height: 99%" data-val="Lucro Inicial: 6.000.000+ ao Mes"></div>
+                            <div class="barra azul" style="height: 99%" data-val="Total: 6.000.000+"></div>
+                            <div class="barra vermelho" style="height: 55%" data-val="Perda: -3.500.000 ao Investimentos"></div>
+                        </div>
+                        <div class="boll">
+                            <div class="barra verde">
+                                <div class="verde title">Lucro</div>
+                            </div>
+                            <div class="barra azul">
+                                <div class="azul title">Total</div>
+                            </div>
+                            <div class="barra vermelho">
+                                <div class="vermelho title">Perda</div>
+                            </div>
+                        </div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                    </div>
+                    <div class="escala_x">
+                        <div class="divisao">
+                            Maio <br>
+                            2000
+                        </div>
+                        <div class="divisao">
+                            Junho <br>
+                            2010
+                        </div>
+                        <div class="divisao">
+                            Setembro <br>
+                            2013
+                        </div>
+                        <div class="divisao">
+                            Agosto <br>
+                            2014
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--==================== MENU JQUERY ====================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $('.barra').mousemove(function() {
+            var val = $(this).data('val');
+            $('.tooltip').html(val)
+            $('.tooltip').show();
+        }).mouseleave(function(){
+            $('.tooltip').hide();
+        })
+    </script>
+    
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+
+    <!--=============== INDEX JS ===============-->
+    <script src="index.js"></script>
+
+</body>
+</html>

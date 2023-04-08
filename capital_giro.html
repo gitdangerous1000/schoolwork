@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="estilo.css">
+
+    <title>Capital de Giro - ISRO</title>
+</head>
+<body>
+     <!--==================== HEADER ====================-->
+     <!-- <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+                ISRO
+            </a>
+
+            
+                <a href="home.html" class="story__button">
+                    <i class="ri-arrow-left-line"></i> Voltar 
+                </a>
+
+            
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+         </nav>  
+    </header> -->
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <div class="grafico_barras">
+            <div class="colunas">
+                <div class="escala_y">
+                    <div class="divisao">120M+</div>
+                    <div class="divisao">100M</div>
+                    <div class="divisao">80M</div>
+                    <div class="divisao">60M</div>
+                    <div class="divisao">40M</div>
+                    <div class="divisao">20M</div>
+                    <div class="divisao">0</div>
+                </div>
+                <div class="area_grafico">
+                    <div class="area_barras">
+                        <div class="tooltip">
+                            Teste
+                        </div>
+                        <div class="divisao">
+                            <div class="barra azul" style="height: 99%" data-val="Banco: 950.000.000"></div>
+                            <div class="barra verde" style="height: 46%" data-val="Contas: -60.000.000"></div>
+                            <div class="barra vermelho" style="height: 61%" data-val="Pagar: -80.000.000"></div>
+                            <div class="barra amarelo" style="height: 8%" data-val="Impostos: -15.000.000"></div>
+                            <div class="barra preto" style="height: 99%" data-val="Total: 795.000.000"></div>
+                        </div>
+                        <div class="divisao">
+                            <div class="barra verde" style="height: 84%" data-val="Contas: -115.000.000"></div>
+                            <div class="barra azul" style="height: 99%" data-val="Banco: 8.000.000.000"></div>
+                            <div class="barra vermelho" style="height: 99%" data-val="Pagar: -162.000.000"></div>
+                            <div class="barra amarelo" style="height: 68%" data-val="Impostos: -84.000.000"></div>
+                            <div class="barra preto" style="height: 99%" data-val="Total: 361.000.000"></div>
+                        </div>
+                        <!-- <div class="divisao">
+                            <div class="barra verde" style="height: 50%" data-val="Contas: "></div>
+                            <div class="barra azul" style="height: 50%" data-val="Banco: "></div>
+                            <div class="barra vermelho" style="height: 50%" data-val="Pagar: "></div>
+                            <div class="barra amarelo" style="height: 50%" data-val="Impostos: "></div>
+                            <div class="barra preto" style="height: 50%" data-val="Total: "></div>
+                        </div> -->
+                        <!-- <div class="divisao">
+                            <div class="barra verde" style="height: 50%" data-val="Contas: "></div>
+                            <div class="barra azul" style="height: 50%" data-val="Banco: "></div>
+                            <div class="barra vermelho" style="height: 50%" data-val="Pagar: "></div>
+                            <div class="barra amarelo" style="height: 50%" data-val="Impostos: "></div>
+                            <div class="barra preto" style="height: 50%" data-val="Total: "></div>
+                        </div> -->
+                        <div class="boll">
+                            <div class="barra verde">
+                                <div class="verde title">Contas</div>
+                            </div>
+                            <div class="barra azul">
+                                <div class="azul title">Banco</div>
+                            </div>
+                            <div class="barra vermelho">
+                                <div class="vermelho title">Pagar</div>
+                            </div>
+                            <div class="barra amarelo">
+                                <div class="amarelo title">Impostos</div>
+                            </div>
+                            <div class="barra preto">
+                                <div class="preto title">Total</div>
+                            </div>
+                        </div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                        <div class="divisao"></div>
+                    </div>
+                    <div class="escala_x">
+                        <div class="divisao">
+                            2021
+                        </div>
+                        <div class="divisao">
+                            2022
+                        </div>
+                        <!-- <div class="divisao">
+                            Informação 3
+                        </div>
+                        <div class="divisao">
+                            Informação 4
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--==================== MENU JQUERY ====================-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $('.barra').mousemove(function() {
+            var val = $(this).data('val');
+            $('.tooltip').html(val)
+            $('.tooltip').show();
+        }).mouseleave(function(){
+            $('.tooltip').hide();
+        })
+    </script>
+    
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+
+    <!--=============== INDEX JS ===============-->
+    <script src="index.js"></script>
+
+</body>
+</html>
