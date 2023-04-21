@@ -1,4 +1,4 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*/
+/*=============== MUDAR O FUNDO DO HEADER ===============*/
 const scrollHeader = () => {
     const header = document.getElementById('header')
 
@@ -7,7 +7,7 @@ const scrollHeader = () => {
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*=============== SWIPER PRODUCTS ===============*/
+/*=============== PRODUTOS SWIPER ===============*/
 let swiperProducts = new Swiper(".products__container", {
     spaceBetween: 32,
     grabCursor: true,
@@ -28,7 +28,7 @@ let swiperProducts = new Swiper(".products__container", {
     },
 });
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+/*=============== ROLAR AS SEÇÕES LINK ATIVO ===============*/
 const sections = document.querySelectorAll('section[id]')
     
 const scrollActive = () =>{
@@ -49,46 +49,46 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
-/*=============== SHOW SCROLL UP ===============*/ 
+/*=============== MOSTRAR SCROLL PARA CIMA ===============*/ 
 const scrollUp = () =>{
 	const scrollUp = document.getElementById('scroll-up')
-    // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+    // Quando a rolagem for maior que 350 de altura da viewport, adicione a classe show-scroll à tag a com a classe scrollup
 	this.scrollY >= 350 ? scrollUp.classList.add('show-scroll')
 						          : scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== DARK LIGHT THEME ===============*/ 
+/*=============== TEMA DE LUZ ESCURA ===============*/ 
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'ri-sun-line'
 
-// Previously selected topic (if user selected)
+// Tópico previamente selecionado (se selecionado pelo usuário)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-// We obtain the current theme that the interface has by validating the dark-theme class
+// Obtemos o tema atual que a interface possui validando a classe dark-theme
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
 
-// We validate if the user previously chose a topic
+// Validamos se o usuário escolheu previamente um tema
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  // Se a validação for cumprida, perguntamos qual era o problema para saber se ativamos ou desativamos o dark
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
   themeButton.classList[selectedIcon === 'ri-sun-line' ? 'add' : 'remove'](iconTheme)
 }
 
-// Activate / deactivate the theme manually with the button
+// Ative/desative o tema manualmente com o botão
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
+    // Adicione ou remova o tema escuro/ícone
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
+    // Salvamos o tema e o ícone atual que o usuário escolheu
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+/*=============== ANIMAÇÃO DA SCROLL ===============*/
 const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
