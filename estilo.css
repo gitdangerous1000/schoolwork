@@ -150,6 +150,15 @@ body.dark-theme{
   margin-bottom: 3rem;
   display: inline-block;
   position: relative;
+  left: 29rem;
+}
+
+.section__title__p {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: 3rem;
+  display: inline-block;
+  position: relative;
   left: 35rem;
 }
 
