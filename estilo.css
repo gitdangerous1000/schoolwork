@@ -901,8 +901,8 @@ body.dark-theme{
 .moon__image{
   border-radius: 14px;
   position: relative;
-  width: 27.5rem;
-  bottom: 20px;
+  width: 27rem;
+  bottom: -10px;
 }
 .moon__title{
   text-align: center;
@@ -910,7 +910,7 @@ body.dark-theme{
   display: inline-block;
   position: absolute;
   right: 11rem;
-  bottom: 30.5rem;
+  bottom: 29rem;
   font-size: 2.5rem;
   text-decoration: underline;
 }
@@ -920,7 +920,7 @@ body.dark-theme{
   display: inline-block;
   position: absolute;
   right: 2rem;
-  bottom: 27rem;
+  bottom: 26rem;
   font-size: 1.1rem;
   line-height: 30px;
 }
@@ -931,7 +931,7 @@ body.dark-theme{
   display: inline-block;
   position: absolute;
   right: 4rem;
-  bottom: 14.5rem;
+  bottom: 13rem;
   text-decoration: underline;
   font-size: 27px;
 }
@@ -941,7 +941,7 @@ body.dark-theme{
   display: inline-block;
   position: absolute;
   right: 5rem;
-  bottom: 11.5rem;
+  bottom: 10rem;
   font-size: 1.1rem;
   line-height: 30px;
 }
@@ -2131,6 +2131,7 @@ body.dark-theme{
   left: 5rem;
   right: 50rem;
   width: 75rem;
+  top: 640px;
 }
 .image_2_0{
   position: absolute;
@@ -2166,6 +2167,7 @@ body.dark-theme{
   left: 5rem;
   right: 50rem;
   width: 75rem;
+  top: 1280px;
 }
 .card_description05{
   position: absolute;
@@ -2174,20 +2176,20 @@ body.dark-theme{
 }
 .card_description06{
   position: absolute;
-  left: 60rem;
+  left: 59rem;
   top: 65rem;
 }
 .image_22b{
   position: absolute;
   left: 29.5rem;
   width: 16.3rem;
-  top: 88rem;
+  top: 86rem;
   width: 25rem;
 }
 .card_description07{
   position: absolute;
   left: 26rem;
-  top: 104rem;
+  top: 102rem;
 }
 .title01{
   position: absolute;
@@ -2222,5 +2224,5 @@ body.dark-theme{
 .title07{
   position: absolute;
   left: 38.5rem;
-  top: 87rem;
+  top: 85rem;
 }
